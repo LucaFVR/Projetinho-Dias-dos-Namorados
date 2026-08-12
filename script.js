@@ -31,7 +31,7 @@ const photos = [
 // Texto final.
 // Você também pode alterar diretamente no index.html.
 const finalTitle = "Para você ❤️";
-const finalText = "        Antes da primeiro mensagem que você me enviou eu não fazia ideia do que me aguardava, do quanto eu ia amar e me importar tanto com qualquer outra pessoa. Eu não conseguia nem imaginar o que a vida tinha pra mim e eu agradeço por ter você na minha vida todos os dias. Depois de todo esse tempo tudo o que eu sinto por você só cresce e tudo o que eu mais desejo é essa vida linda que eu sei que se ficar ao seu lado eu vou ter. Você não é só tudo o que eu mais amo mas ja é tambem uma das melhores e mais importantes partes de mim, Feliz dia dos Namorados minha Principessa!❤️";
+const finalText = "        Antes da primeiro mensagem que você me enviou eu não fazia ideia do que me aguardava, do quanto eu ia amar e me importar tanto com qualquer outra pessoa. Eu não conseguia nem imaginar o que a vida tinha pra mim e eu agradeço por ter você na minha vida todos os dias. Depois de todo esse tempo tudo o que eu sinto por você só cresce e tudo o que eu mais desejo é essa vida linda que eu sei que se ficar ao seu lado eu vou ter. Você não é só tudo o que eu mais amo mas ja é tambem uma das melhores e mais importantes partes de mim, Eu te amo muito minha Principessa!❤️";
 
 
 // ============================================================

@@ -60,6 +60,7 @@ button {
 .quiz-content,
 .gallery-content,
 .final-content {
+  padding-bottom: 40px;
   position: relative;
   z-index: 10;
   width: min(900px, 100%);
@@ -382,6 +383,7 @@ button {
 }
 
 .final-content p {
+  font-size: clamp(18px, 4vw, 26px);
   color: #f4c6dc;
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(24px, 4vw, 34px);

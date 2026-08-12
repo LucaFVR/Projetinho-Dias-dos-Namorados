@@ -21,7 +21,8 @@ body {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden; /* só esconde rolagem lateral */
+  overflow-y: auto;   /* permite rolagem vertical */
   background:
     radial-gradient(circle at 50% 35%, rgba(117, 5, 27, 0.42), transparent 45%),
     radial-gradient(circle at 20% 90%, rgba(255, 25, 110, 0.10), transparent 30%),

@@ -21,8 +21,8 @@ body {
 }
 
 body {
-  overflow-x: hidden; /* só esconde rolagem lateral */
-  overflow-y: auto;   /* permite rolagem vertical */
+  overflow-x: hidden;   /* só bloqueia rolagem lateral */
+  overflow-y: auto;     /* permite rolagem vertical */
   background:
     radial-gradient(circle at 50% 35%, rgba(117, 5, 27, 0.42), transparent 45%),
     radial-gradient(circle at 20% 90%, rgba(255, 25, 110, 0.10), transparent 30%),
@@ -36,21 +36,22 @@ button {
 }
 
 .screen {
-  position: fixed;
+  position: relative;   /* não fixa mais na tela */
   inset: 0;
   display: none;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: auto;     /* deixa altura crescer conforme conteúdo */
+  height: auto;
   padding: 25px;
   opacity: 0;
   transform: scale(0.98);
   transition: opacity 0.45s ease, transform 0.45s ease;
   z-index: 5;
 }
-
 .screen.active {
   display: flex;
+  flex-direction: column; /* garante que o conteúdo empilhe */
   opacity: 1;
   transform: scale(1);
 }

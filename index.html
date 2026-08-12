@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Você ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hearts-container"></div>
+  <div id="confetti-container"></div>
+
+  <!-- TELA INICIAL -->
+  <section id="start-screen" class="screen active">
+    <div class="intro-content">
+      <div class="heart-logo">♥</div>
+      <h1>Uma pequena surpresa</h1>
+      <p>Feita especialmente para você.</p>
+      <button class="neon-button" id="start-btn">Começar</button>
+    </div>
+  </section>
+
+  <!-- MENU PRINCIPAL -->
+  <section id="menu-screen" class="screen">
+    <div class="menu-content">
+      <h2>Escolha uma surpresa</h2>
+      <div class="menu-buttons">
+        <button class="menu-card" id="quiz-btn">
+          <span class="card-icon">♡</span>
+          <span>Quiz</span>
+        </button>
+
+        <button class="menu-card" id="surprise-btn">
+          <span class="card-icon">✦</span>
+          <span>Surpresa</span>
+        </button>
+
+        <button class="menu-card" id="end-btn">
+          <span class="card-icon">♥</span>
+          <span>FIM</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz-screen" class="screen">
+    <div class="quiz-content">
+      <div id="quiz-intro">
+        <div class="big-heart">♥</div>
+        <h2>Está pronta?</h2>
+        <button class="neon-button" id="ready-btn">Estou!</button>
+      </div>
+
+      <div id="question-container" class="hidden">
+        <div class="question-progress" id="question-progress">1 / 3</div>
+        <h2 id="question-title"></h2>
+        <div id="answers-container" class="answers"></div>
+        <div id="quiz-message" class="quiz-message"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SURPRESA / FOTOS -->
+  <section id="surprise-screen" class="screen">
+    <div class="gallery-content">
+      <h2>Alguns dos nossos momentos</h2>
+
+      <div class="photo-viewer">
+        <button class="gallery-arrow left" id="prev-photo" aria-label="Foto anterior">‹</button>
+
+        <div class="photo-area">
+          <img id="gallery-image" src="" alt="Foto especial">
+          <div id="photo-placeholder">
+            <span>📷</span>
+            <p>Coloque sua primeira foto no código</p>
+          </div>
+          <p id="photo-caption"></p>
+          <div class="photo-counter" id="photo-counter">1 / 5</div>
+        </div>
+
+        <button class="gallery-arrow right" id="next-photo" aria-label="Próxima foto">›</button>
+      </div>
+
+      <button class="back-button" id="gallery-back">Voltar</button>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section id="end-screen" class="screen">
+    <div class="final-content">
+      <div class="final-heart">♥</div>
+      <h2 id="final-title">Para você ❤️</h2>
+      <p id="final-text">
+        <!--
+          ESCREVA AQUI O TEXTO FINAL QUANDO DECIDIR.
+          Exemplo:
+          "Obrigado por fazer cada dia da minha vida mais especial..."
+        -->
+        Em breve, uma mensagem especial aparecerá aqui.
+      </p>
+      <button class="back-button" id="final-back">Voltar</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
